@@ -1,7 +1,7 @@
 {
-    "name": "lzaplata/nphorice-theme",
+    "name": "zdolf/romin-theme",
     "type": "october-theme",
-    "description": "Theme for NP Hořice.",
+    "description": "Theme for janromancak.",
     "require": {
         "composer/installers": "~1.0"
     }
