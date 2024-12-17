@@ -158,16 +158,26 @@ header
                                                 & > span
                                                     cursor: default
 
-    .socials
-        a
-            .icon
-                background-color: $header-socials-icon-bg
-                color: $header-socials-icon-color
-                transition: $transition-base
+    .phone
+        a.link-info
+            background-color: $header-phone-icon-bg !important
+            color: $header-phone-icon-color !important
+            transition: $transition-base
 
             &:hover
+                color: $header-phone-icon-hover-color !important
+
+    .socials
+            a
                 .icon
-                    color: $header-socials-icon-hover-color
+                    background-color: $header-socials-icon-bg
+                    color: $header-socials-icon-color
+                    transition: $transition-base
+                    font-size: map-get($font-sizes, 1)
+
+                &:hover
+                    .icon
+                        color: $header-socials-icon-hover-color
 
     .search
         a
