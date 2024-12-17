@@ -1,0 +1,63 @@
+items:
+    -
+        title: 'O mě'
+        nesting: null
+        type: url
+        url: '#o-me'
+        code: ''
+        reference: null
+        cmsPage: null
+        replace: null
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Svatby
+        nesting: null
+        type: url
+        url: '#svatby'
+        code: ''
+        reference: null
+        cmsPage: null
+        replace: null
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Rodinné
+        nesting: null
+        type: url
+        url: '#rodinne'
+        code: ''
+        reference: null
+        cmsPage: null
+        replace: null
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Volná tvorba'
+        type: url
+        url: '#volna-tvorba'
+        code: ''
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Kontakt
+        nesting: null
+        type: url
+        url: '#kontakt'
+        code: ''
+        reference: null
+        cmsPage: null
+        replace: null
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+name: 'Main Menu'

@@ -1,0 +1,59 @@
+url = "/"
+layout = "default"
+title = "Úvod"
+
+[collection slider]
+handle = "Slider\Slide"
+
+[global slider_settings]
+handle = "Slider\Settings"
+
+[Gallery svatby]
+gallery = "svatby"
+imagesPerPage = 30
+
+[Gallery rodinne]
+gallery = "rodinne"
+imagesPerPage = 30
+
+[Gallery volna]
+gallery = "volna-tvorba"
+imagesPerPage = 30
+==
+{% if slider.getIterator().count %}
+    <div class="container-fluid g-0">
+        <div class="container-fluid g-0">
+            {% partial "_swiper/slider" slides=slider settings=slider_settings %}
+        </div>
+    </div>
+{% endif %}
+
+<div class="container-fluid pt-5">
+    <div class="container-lg pt-xl-4">
+        <h2 class="h1 mb-4 mb-xl-5" id="svatby">
+            Svatby
+        </h2>
+    </div>
+
+    {% component 'svatby' %}
+</div>
+
+<div class="container-fluid pt-5">
+    <div class="container-lg pt-xl-4">
+        <h2 class="h1 mb-4 mb-xl-5" id="rodinne">
+            Rodinné
+        </h2>
+    </div>
+
+    {% component 'rodinne' %}
+</div>
+
+<div class="container-fluid pt-5">
+    <div class="container-lg pt-xl-4">
+        <h2 class="h1 mb-4 mb-xl-5" id="volna-tvorba">
+            Volná tvorba
+        </h2>
+    </div>
+
+    {% component 'volna' %}
+</div>
